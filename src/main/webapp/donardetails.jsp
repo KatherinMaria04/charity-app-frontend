@@ -13,7 +13,7 @@
 
 function listDonation(){
     
-var url="http://localhost:8080/Charity_app/DonarDetailsServet";
+var url="http://localhost:8080/charity_app_mavenweb/DonarDetailsServet";
 $.getJSON(url,function(response){
     var list = response;
 
@@ -68,6 +68,11 @@ document.getElementById("tbody").innerHTML =  content;
 <script>
 listDonation();
 </script>
+<a href="?pageName=home.jsp">Back</a>
+<br>
+<br>
+<br>
+<a href="?pageName=index.jsp">logout</a>
 
 
 <br>

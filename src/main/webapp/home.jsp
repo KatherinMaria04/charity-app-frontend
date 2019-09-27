@@ -21,7 +21,7 @@
 <br>
 <br>
 
-<a href="?pageName=donordonations.jsp">Add Request</a>
+<a href="?pageName=donordonations.jsp">Contribute</a>
 <br>
 <br>
 

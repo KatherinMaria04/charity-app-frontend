@@ -26,13 +26,13 @@
           <a class="nav-link" href="register.jsp">Register</a>
           </li>   -->
          <li class="nav-item">
-          <a class="nav-link" href="?pageName=register.jsp">register <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="?pageName=register.jsp">Register <span class="sr-only">(current)</span></a>
         </li> 
          <li class="nav-item">
-          <a class="nav-link" href="?pageName=login.jsp"> UserLogin <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="?pageName=login.jsp"> Donor Login <span class="sr-only">(current)</span></a>
         </li> 
          <li class="nav-item">
-          <a class="nav-link" href="?pageName=adminLogin.jsp">AdminLogin <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="?pageName=adminLogin.jsp">Admin Login <span class="sr-only">(current)</span></a>
         </li> 
       
       </ul>

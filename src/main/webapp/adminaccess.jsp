@@ -17,7 +17,7 @@
 <br>
 <br>
 <br>
-<a href="?pageName=adminviewlist.jsp">Donation List</a>
+<a href="?pageName=listdonations.jsp">Donation List</a>
 <br>
 <br>
 
@@ -30,7 +30,7 @@
 <a href="?pageName=donoractivity.jsp">Donor Activity</a>
 <br>
 <br>
-<a href="?pageName=index.jsp">Home</a>
+<!--  <a href="?pageName=index.jsp">Home</a> -->
 
 
 </body>

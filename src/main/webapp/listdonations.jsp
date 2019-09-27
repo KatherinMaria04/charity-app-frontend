@@ -9,11 +9,12 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <jsp:include page="header.jsp"></jsp:include>
+<body style="text-align:center">
 <script>
 
 function listDonation(){
     
-var url="http://localhost:8080/Charity_app/ListAdminDetails";
+var url="http://localhost:8080/charity_app_mavenweb/ListAdminDetails";
 $.getJSON(url,function(response){
     var list = response;
 
@@ -44,12 +45,7 @@ document.getElementById("tbody").innerHTML =  content;
 <br>
 	<h2> DONATION LIST</h2>
 	<br>
-	<a href="index.jsp">Home</a>
-	<br>
-	<br>
-
-	<a href="donordonations.jsp">Donor Donations</a>
-
+	
 	<form onsubmit="listDonation()"></form>
 	<br>
 	<div class="container-fluid">
@@ -60,9 +56,9 @@ document.getElementById("tbody").innerHTML =  content;
 				<table border="1" class="table table-condensed" id="tbl">
 					<thead>
 						<tr>
-							<th>RequestType</th>
-							<th>AmountRequested</th>
-							<th>RequestAmount</th>
+							<th>Request Type</th>
+							<th>Amount Requested</th>
+							<th>Request Amount</th>
 						</tr>
 					</thead>
 					<tbody id="tbody">
@@ -74,6 +70,12 @@ document.getElementById("tbody").innerHTML =  content;
 	<script>
 listDonation();
 </script>
+<br>
+<br>
+<a href="?pagename=index.jsp">logout</a>
+<br>
+<br>
+<br>
 
 
 

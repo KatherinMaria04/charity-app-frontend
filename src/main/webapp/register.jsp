@@ -48,7 +48,7 @@ function register()
  var password=document.getElementById("password").value;
  var formData = "username=" + username + "&phonenumber="+ phonenumber +"&password="+password; 
  console.log(formData);
- var url="http://localhost:8080/Charity_app/RegisterServlet?"+formData;
+ var url="http://localhost:8080/charity_app_mavenweb/RegisterServlet?"+formData;
  console.log(url);
  var formData = {};
  $.get(url, function(response){

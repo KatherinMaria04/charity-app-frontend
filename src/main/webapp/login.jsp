@@ -28,7 +28,7 @@ function login(){
     
     var formData = "username=" + username + "&password=" + password ;
     console.log(formData);
-    var url="http://localhost:8080/Charity_app/LoginServlet?"+formData;
+    var url="http://localhost:8080/charity_app_mavenweb/LoginServlet?"+formData;
     console.log(url);
     var formData = {};
     $.get(url, function(response){
@@ -40,7 +40,7 @@ function login(){
             if (msg.errorMessage!=null) {
                 alert("Invalid Username/Password");
             } else {
-                alert("logged in successfully");
+                alert("login successful");
                 window.location.href = "?pageName=home.jsp";
             }
             
@@ -67,6 +67,12 @@ function login(){
         <br />
 </form>
 <br/>
-<a href="index.jsp">Home</a>
+
+<br>
+<br>
+<br>
+<a href="?pageName=index.jsp">Home</a>
+
+
 </body>
 </html>

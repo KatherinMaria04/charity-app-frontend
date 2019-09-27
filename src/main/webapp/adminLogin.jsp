@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ADMIN LOGIN</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -27,7 +27,7 @@ function login(){
     
     var formData = "username=" + username + "&password=" + password ;
     console.log(formData);
-    var url="http://localhost:8080/Charity_app/AdminLoginServlet?"+formData;
+    var url="http://localhost:8080/charity_app_mavenweb/AdminLoginServlet?"+formData;
     console.log(url);
     var formData = {};
     $.get(url, function(response){
@@ -61,13 +61,16 @@ function login(){
 <br/>
 <br>
 <input type="submit"
-            value="Submit" class="btn btn-success"onclick=home.html>
+            value="Submit" class="btn btn-success">
         <button type="reset" class="btn btn-danger" value="clear">clear
         </button>
         <br />
 </form>
 <br/>
-<a href="index.jsp">Home</a>
+<a href="?pagename=index.jsp">Home</a>
+<br>
+<br>
+
 </body>
 </html>
 
