@@ -25,7 +25,7 @@ for(let ld of list){
     console.log(list);
     content += "<tr>";
     content += "<td>" + ld.customername + "</td>";
-    content += "<td>" + ld.password + "</td>";
+    //content += "<td>" + ld.password + "</td>";
     content += "<td>" + ld.phoneno  + "</td>";
     content += "</tr>";
 }
@@ -55,7 +55,7 @@ document.getElementById("tbody").innerHTML =  content;
                <thead>
                    <tr>
                        <th>Username </th>
-                       <th>Password</th>
+                      <!--  <th>Password</th>-->
                        <th>Phone Number</th>
                    </tr>
                </thead>
