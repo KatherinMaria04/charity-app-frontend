@@ -68,9 +68,7 @@ function login(){
 </form>
 <br>
 <br>
-<br>
-<br>
-<a href="?pageName=index.jsp">Home</a>
+<a href="?pageName=css.jsp">Home</a>
 
 
 </body>

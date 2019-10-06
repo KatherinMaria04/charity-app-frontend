@@ -13,8 +13,7 @@
 </head>
 <br>
 <br>
-<br>
-<br>
+
 <h2> REGISTRATION</h2>
 <body style="text-align:center">
 
@@ -27,9 +26,14 @@
 <input type="tel" name="phonenumber" id="phonenumber" placeholder="Enter phone number"required  />
 <br/>
 <br>
-<label>Password:</label>
-<input type="password" name="password" id="password" placeholder="Enter Password" required />
-<br/>
+
+<label for="psw">Password:</label>
+  <input type="password" id="password" name="psw" 
+   placeholder="Enter Password"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter,
+   and at least 8 or more characters" required/>
+ <br /> <br/>
 <br>
 <input type="submit"
             value="Submit" class="btn btn-success">
@@ -38,9 +42,17 @@
         <br />
 
 <br/>
-Existing User ? <a href="login.jsp">Login</a> <br/>
-<a href="css.jsp">Home</a>
+Existing User ? <a href="?pageName=login.jsp">Login</a> <br/>
+<a href="?pageName=css.jsp">Home</a>
 </form>
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
 <script>
 function register()
 {
@@ -72,6 +84,7 @@ function register()
          
  });
 }
+
 </script>
 </body>
 </html>
