@@ -9,6 +9,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <jsp:include page="header.jsp"></jsp:include>
+
 </head>
 <br>
 <br>
@@ -16,9 +17,10 @@
 <br>
 <h2> REGISTRATION</h2>
 <body style="text-align:center">
+
 <form onsubmit="register()" >
-<label>Username:</label>
-<input type="text" name="username" id="username" placeholder="Enter username" required autofocus />
+<label>Email-ID:</label>
+<input type="email" name="username" id="username" placeholder="Enter your Email-ID"  required autofocus />
 <br/>
 <br>
 <label>Phone Number</label>
@@ -37,19 +39,26 @@
 
 <br/>
 Existing User ? <a href="login.jsp">Login</a> <br/>
-<a href="index.jsp">Home</a>
+<a href="css.jsp">Home</a>
 </form>
 <script>
 function register()
 {
+	//alert('hi')
  event.preventDefault();
+
  var username = document.getElementById("username").value;
  var phonenumber=document.getElementById("phonenumber").value;
  var password=document.getElementById("password").value;
+ //alert("entering");
  var formData = "username=" + username + "&phonenumber="+ phonenumber +"&password="+password; 
  console.log(formData);
+ //alert(formData);
+
  var url="http://localhost:8080/charity_app_mavenweb/RegisterServlet?"+formData;
  console.log(url);
+ 
+ //alert(url);
  var formData = {};
  $.get(url, function(response){
          console.log(response);
@@ -58,7 +67,7 @@ function register()
              alert("Invalid Username/Password");
          } else {
              alert("register successfully");
-             window.location.href = "?pageName=login.jsp";
+             window.location.href ="?pageName=login.jsp";
          }
          
  });

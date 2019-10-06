@@ -52,8 +52,8 @@ function login(){
 
 
 <form onsubmit= "login()">
-<label>Username:</label>
-<input type="text" name="username" id="username" placeholder="Enter username"  required autofocus />
+<label>Email-ID</label>
+<input type="email" name="username" id="username" placeholder="Enter your email-id"  required autofocus />
 <br/>
 <br>
 <label>Password:</label>
@@ -66,8 +66,7 @@ function login(){
         </button>
         <br />
 </form>
-<br/>
-
+<br>
 <br>
 <br>
 <br>

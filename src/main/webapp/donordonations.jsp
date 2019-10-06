@@ -27,7 +27,7 @@ function addRequest(){
   
     var formData = "UserName=" + UserName + "&RequestType=" + RequestType + "&DonatingAmount="+ DonatingAmount;
     console.log(formData);
-    //alert(formData);
+   // alert(formData);
     var url="http://localhost:8080/charity_app_mavenweb/DonarFund?"+formData;
 	console.log(url);
 	//alert(url);
@@ -49,16 +49,16 @@ function addRequest(){
 </script>
 <form onsubmit="addRequest()">
 
-<label>Username:</label>
-<input type="text" name="Username" id="UserName" placeholder="Enter User Name"  required autofocus />
+<label>Email-Id:</label>
+<input type="email" name="username" id="UserName" placeholder="Enter your email-id"  required autofocus />
+<br/>
+<br> 
+<label>Request Type</label> 
+<input type="text" name="request type" id="RequestType" placeholder="Enter request type"  required autofocus />
 <br/>
 <br>
-<label>RequestType:</label>
-<input type="text" name="Request Type" id="RequestType" placeholder="Enter Request Type"  required />
-<br/>
-<br>
-<label>DonatingAmount:</label>
-<input type="text" name="Donating Amount" id="DonatingAmount" placeholder="Enter amount"  required />
+<label>Donating Amount:</label>
+<input type="number" name="Donating Amount" id="DonatingAmount" placeholder="Enter amount"  required />
 <br/>
 <br>
 
@@ -73,7 +73,7 @@ function addRequest(){
 <br>
 <br>
 <br>
-<a href="?pageName=index.jsp">logout</a>
+<a href="?pageName=css.jsp">logout</a>
 
 
 </body>

@@ -21,7 +21,7 @@
             if (pageName == null || "".equals(pageName)) {
                 pageName = "css.jsp";
             }
-            // out.println(pageName);
+           //  out.println(pageName);
         %>
 
         <jsp:include page="<%=pageName%>"></jsp:include>

@@ -64,12 +64,17 @@ document.getElementById("tbody").innerHTML =  content;
 </div>
 <script>
 listDonation();
+function logout()
+{
+    event.preventDefault();
+        window.location.href="?pageName=css.jsp";
+}
 </script>
-<a href="?pageName=home.jsp">Back</a>
+<a href="?pageName=adminaccess.jsp">Back</a>
 <br>
 <br>
 <br>
-<a href="?pageName=index.jsp">logout</a>
+<a href="" onclick="logout()">logout</a>
 
 
 </head>

@@ -46,16 +46,16 @@ function addRequest(){
 </script>
 <form onsubmit="addRequest()">
 
-<label>RequestType:</label>
+<label>Request Type:</label>
 <input type="text" name="request Type" id="requestType" placeholder="Enter requestType"  required autofocus />
 <br/>
 <br>
-<label>AmountRequested:</label>
-<input type="text" name="amount Requested" id="amountRequested" placeholder="Enter amount"  required />
+<label>Amount Donated:</label>
+<input type="number" name="amount Requested" id="amountRequested" placeholder="Enter amount"  required />
 <br/>
 <br>
- <label>TragetAmount:</label>
-<input type="text" name="target Amount" id="targetAmount" placeholder="Enter amount"  required />
+ <label>Traget Amount:</label>
+<input type="number" name="target Amount" id="targetAmount" placeholder="Enter amount"  required />
 <br/>
 <br>
 <button type="submit">Submit</button>

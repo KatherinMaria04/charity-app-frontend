@@ -57,8 +57,8 @@ document.getElementById("tbody").innerHTML =  content;
 					<thead>
 						<tr>
 							<th>Request Type</th>
-							<th>Amount Requested</th>
-							<th>Request Amount</th>
+							<th>  Amount Donated</th>
+							<th>Target Amount</th>
 						</tr>
 					</thead>
 					<tbody id="tbody">
@@ -72,11 +72,11 @@ listDonation();
 </script>
 <br>
 <br>
-<a href="?pagename=index.jsp">logout</a>
+<a href="?pagename=css.jsp">logout</a>
 <br>
 <br>
 <br>
-
+<a href="?pageName=adminaccess.jsp">Back</a>
 
 
 </body>

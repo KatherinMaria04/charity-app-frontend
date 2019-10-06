@@ -45,6 +45,8 @@ document.getElementById("tbody").innerHTML =  content;
 
 <h3> DONATIONS LIST</h3>
 
+<br>
+<br>
 
 
 <form onsubmit = "listDonation()"> </form> 
@@ -55,9 +57,9 @@ document.getElementById("tbody").innerHTML =  content;
            <table border="1" class="table table-condensed" id="tbl">
                <thead>
                    <tr>
-                       <th>RequestType</th>
-                       <th>AmountRequested</th>
-                       <th>TargetAmount</th>
+                       <th>Request Type</th>
+                       <th>Amount Donated</th>
+                       <th>Target Amount</th>
                    </tr>
                </thead>
                <tbody id="tbody">
@@ -68,12 +70,20 @@ document.getElementById("tbody").innerHTML =  content;
 </div>
 <script>
 listDonation();
+function logout()
+{
+    event.preventDefault();
+        window.location.href="?pageName=css.jsp";
+}
 </script>
+
+<br>
+<br>
+<br>
+<a href="" onclick="logout()">logout</a>
+<br>
+<br>
 <a href="?pageName=home.jsp">Back</a>
-<br>
-<br>
-<br>
-<a href="?pageName=index.jsp">logout</a>
 
 </body>
 </html>

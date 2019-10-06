@@ -44,7 +44,7 @@ document.getElementById("tbody").innerHTML =  content;
 <br>
 <h3> DONOR DETAILS</h3>
 <br>
-<a href="index.jsp">Home</a>
+
 <form onsubmit = "listDonation()"> </form> 
 <br>
 <div class="container-fluid">
@@ -68,16 +68,13 @@ document.getElementById("tbody").innerHTML =  content;
 <script>
 listDonation();
 </script>
-<a href="?pageName=home.jsp">Back</a>
+<a href="?pageName=adminaccess.jsp">Back</a>
 <br>
-<br>
-<br>
-<a href="?pageName=index.jsp">logout</a>
 
 
 <br>
 <br>
-
+<a href="index.jsp">logout</a>
 
 </head>
 <body>

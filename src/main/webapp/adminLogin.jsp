@@ -21,6 +21,7 @@
 <script>
 
 function login(){
+	//alert("entering")
     event.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -29,18 +30,20 @@ function login(){
     console.log(formData);
     var url="http://localhost:8080/charity_app_mavenweb/AdminLoginServlet?"+formData;
     console.log(url);
+    //alert(url);
     var formData = {};
+   // alert(formData);
     $.get(url, function(response){
             console.log(response);
             console.log(response.errorMessage);
             var msg=JSON.parse(response);
-            
+            //alert(msg);
             
             if (msg.errorMessage!=null) {
                 alert("Invalid Username/Password");
             } else {
                 alert("logged in successfully");
-                window.location.href = "?pageName=adminaccess.jsp";
+                window.location.href ="?pageName=adminaccess.jsp";
             }
             
     });
@@ -52,9 +55,8 @@ function login(){
 
  <form onsubmit= "login()">
 
-<label>Username:</label>
-<input type="text" name="username" id="username" placeholder="Enter username" required autofocus />
-<br/>
+<label>Email-ID:</label>
+<input type="email" name="username" id="username" placeholder="Enter your email-id"  required autofocus />
 <br>
 <label>Password:</label>
 <input type="password" name="password" id="password" placeholder="Enter Password" required />
@@ -67,12 +69,10 @@ function login(){
         <br />
 </form>
 <br/>
-<a href="?pagename=index.jsp">Home</a>
+<a href="?pagename=css.jsp">Home</a>
 <br>
 <br>
 
 </body>
 </html>
 
-</body>
-</html>
